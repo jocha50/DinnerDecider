@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dd_logo"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_launcher_foreground"
+        tools:layout_editor_absoluteX="139dp"
+        tools:layout_editor_absoluteY="131dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Hamburger"
+        android:textSize="20pt"
+        tools:layout_editor_absoluteX="176dp"
+        tools:layout_editor_absoluteY="488dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Add your order here"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="286dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+    <Button
+        android:id="@+id/button"
+        android:layout_width="173dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:onClick="addFood"
+        android:text="Add Food"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="531dp" />
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="405dp"
+            android:layout_height="58dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:onClick="decide"
+            android:text="DECIDE!"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="675dp" />
+    </RelativeLayout>
+
+</LinearLayout>
